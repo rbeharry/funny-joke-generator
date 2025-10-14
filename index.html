@@ -19,15 +19,20 @@
     <h1>AI Joke Generator</h1>
     <div class="container">
       <main>
+        <div class="form-container">
         <form id="joke-generator-form">
-          <input type="text" class="prompt instructions" id="user-input" />
+          <input type="text" placeholder="Enter the topic of a joke" class="prompt instructions" id="user-input" />
           <input
             type="submit"
             class="submit-button"
             id="generator-joke-button"
           />
-        </form>
-        <div class="joke" id="joke"></div>
+          </form>
+          <div class="hint">i.e: puppy, office, dad</div>
+          </div>
+    
+       
+        <div class="joke hidden" id="joke"></div>
 
         <div id="typewriter-text" class="text"></div>
       </main>
