@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Joke Generator 😄</title>
-<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href ="src/style.css">
-</head>
+  <body>
     <h1>AI Joke Generator</h1>
-<body>
-     
     <div class="container">
-    <main>
+      <main>
         <form id="joke-generator-form">
-            <input type="text" placeholder="Enter the topic of the joke" autofocus required class="prompt"/>
-        <input type="submit" class="submit-button"/>
+          <input type="text" class="prompt instructions" id="user-input" />
+          <input
+            type="submit"
+            class="submit-button"
+            id="generator-joke-button"
+          />
         </form>
-        <div class="joke" id="joke">
-            </div>
+        <div class="joke" id="joke"></div>
 
-         
-<div id="typewriter-text" class="text"></div>
-</div>
-</div>
-</main>
+        <div id="typewriter-text" class="text"></div>
+      </main>
+    </div>
 
-    <script src = "src/index.js"></script>
-    <footer>This project was coded by Roxane Beharry and is <a href="https://github.com/rbeharry/joke-generator" target="_blank">open-sourced on Github </a>and is hosted on <a href="https://www.netlify.com/"target="_blank">Netlify</a></footer>
-
-</body>
+    <footer>
+      This project was coded by Roxane Beharry and is
+      <a href="https://github.com/rbeharry/joke-generator" target="_blank"
+        >open-sourced on Github </a
+      >and is hosted on
+      <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+    </footer>
+    <script src="src/index.js"></script>
+  </body>
 </html>
